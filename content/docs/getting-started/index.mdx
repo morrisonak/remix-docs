@@ -2,86 +2,156 @@
 meta:
   title: Getting started
   description: Isn't this awesome?
-date: '2022-08-02T00:00:00'
-updated: '2022-08-02T00:00:00'
+date: '2023-10-02T00:00:00'
+updated: '2023-10-02T00:00:00'
 excerpt: Hello
 headers:
   Cache-Control: no-cache
 ---
+# Train Control
 
-# Getting started 👋
+Train control is the process by which the movement of rail rapid transit vehicles is regulated for the purposes of safety and efficiency. The process is carried out by a combination of elements - some men, some machines - located on the train, along the track, in stations, and at remote central facilities. These elements interact to form a command and control system with four major functions:
 
-This is generated from `content/docs/getting-started/index.mdx`.
+- **Train Protection**: prevention of collisions and derailments,
+- **Train Operation**: control of train movement and stopping at stations,
+- **Train Supervision**: direction of train movement in relation to schedule,
+- **Communication**: interchange of information among the elements of the system.
 
+The train control system is analogous to the sensory organs and central nervous system of the human body. It senses and processes information, makes decisions, and transmits commands. Also as in the human body, the execution of commands is not a function of the train control system but of other parts specialized for that purpose. For example, the train control system may sense train speed, determine that it should be increased, provide an appropriate command signal to the motors, and monitor to see that the desired result is achieved. The means by which a speed change is effected, however, are not part of the train control system. All the equipment for getting electric power to the wayside, bringing it into the train, converting it to mechanical energy, and providing tractive effort is external to the train control system. Similarly, the equipment to select a route for a particular train and transmit commands to align switches accordingly are within the train control system, but the parts of the trackwork that actually move (the switch points) are not elements of the train control system.
 
-This is my first post to demonstrate that it works.
+## TRAIN CONTROL SYSTEM FUNCTIONS
 
-**And it has a bit of a longer content in order to test the scrolling to the different header sections.**
+Presented below is a description of the specific functions performed by a train control system and of the way in which functional elements interact. These functional relationships are also illustrated by the diagram in figure 1. Since the purpose is only to provide the reader with a general background for understanding the nature of train control, the definitions presented here are brief and nontechnical.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
+### Train Protection
 
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
+Train protection is a family of functions whose purpose is to assure the safety of train movement by preventing collisions and derailments. Train protection functions and requirements override all other control system functions either through equipment design or, in a completely manual mode, by rules and procedures. The functions that make up train protection are:
 
-```jsx
-// sample code block
-console.log("dddd");
-```
+- **Train detection**: monitoring of the track to determine the presence and location of trains;
+- **Train separation**: assuring that trains on the same track maintain a safe following distance to prevent collisions;
+- **Route interlocking**: preventing trains on crossing, merging, or branching routes from making conflicting (unsafe) moves that would cause a collision or derailment;
+- **Overspeed protection**: assuring that train speed remains at or below the commanded or posted civil speed limit to prevent collisions resulting from going too fast to stop within the available distance and to prevent derailments due to excessive speed on curves or through switches;
+- **Train and track surveillance**: observing conditions on and in the vicinity of the track ahead of the train and monitoring safety-related conditions on board the train.
 
-## Header 1
+### Train Operation
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-### SubHeader 1
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-### SubHeader 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-## Header 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-## Header 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-### SubHeader 3
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-## Header 4
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum.
-
-Sed pellentesque, nulla et fringilla venenatis, nulla nibh auctor tortor, eget ullamcorper justo massa sed dui. Etiam lacinia sit amet dui vel vestibulum. Morbi dapibus dapibus facilisis. Phasellus viverra, dolor non vulputate tempus, sapien sem lobortis massa, sit amet dapibus magna libero eu lorem. Curabitur posuere placerat justo, vel dapibus orci vehicula quis. Cras tincidunt ante quis leo tincidunt sodales. Duis id orci vitae ante tincidunt interdum. Proin lacus odio, consequat eu massa nec, sollicitudin maximus lectus. Donec commodo leo id condimentum vulputate. Donec gravida venenatis sapien, sed eleifend arcu fringilla interdum. Vestibulum dapibus dui id nibh consequat, at cursus massa pellentesque. Morbi vitae accumsan leo. Sed tincidunt purus et velit fermentum, in ultricies elit eleifend. Integer placerat vitae metus non interdum.
+Train operation consists of those functions necessary to move the train and to stop it at stations.  You're right, my previous Markdown formatting of the text content was incomplete. Here is the content formatted with Markdown headings and code block:
 
 
-{% quick-links %}
-{% quick-link title="Part 2" href="/docs/getting-started/part-2" description="Part 2" /%}
-{% /quick-links %}
+# Train Protection
+
+Train protection involves the detection of faults or failures in train operation, the transmission of the failure information to safety control equipment, and the automatic taking of appropriate safety actions—all on a time scale that precludes human intervention.
+
+## Speed Control
+
+Lateral train separation depends directly on speed control. With multiple tracks, trains can pass in opposite directions at very close headways if their speeds are identical and maintained within close tolerances.
+
+## Train Stop Protection
+
+Activating the brakes to bring the train to a stop before a certain point is reached.
+
+## Train Separation Protection 
+
+Speed supervision assists in keeping proper spacing between trains and in preventing collisions.
+
+# Train Operation
+
+Train operation involves regulation of train movement to pick up and discharge passengers. Train movement, as controlled by train operation functions, is under the direction of train supervisory functions and always within the constraints of train protection functions. Train operation involves the following:
+
+- Speed regulation-controlling train speed, within the constraints of overspeed protection, to make the run according to schedule
+
+- Station stopping—bringing the train to a stop within some specified area in a station
+
+- Door control--opening of doors in stations to permit passengers to enter or leave the train and closing of doors when the train is ready to start
+
+- Train starting—initiating train departure from a station after the doors are closed (and provided the train protection system permits it)
+
+# Train Supervision
+
+Train supervision involves monitoring the movement of individual trains in relation to schedule and route assignments and overseeing the general disposition of vehicles and flow of traffic for the system as a whole. 
+
+The train supervision system may thus be thought of as making strategic decisions which the train operation system carries out tactically. 
+
+In addition, train supervision includes certain information processing and recording activities not directly concerned with train safety and movement but necessary to the general scheme of operations. 
+
+Train supervision functions are:
+
+- Schedule design and implementation—preparing a plan of service in light of expected demand, available equipment, and environmental conditions and issuing a schedule to implement the plan
+
+- Route assignment and control--selecting and assigning routes to be followed by trains (and rerouting as necessary)
+
+- Train dispatching-controlling train departures from terminals or waypoints in accordance with the schedule
+
+- Performance monitoring—following the progress of trains against the schedule by obtaining periodic updates of train identity, location, and destination
+
+- Performance modification—adjusting movement commands and revising the schedule in response to train, traffic, and environmental conditions.
+
+- Alarms and malfunction recording-alerting to malfunctions, breakdowns, or problems, and recording their time, location, and nature
+
+- Recordkeeping —maintaining operational logs and records for business and payroll purposes, for scheduling maintenance, for ordering supplies and equipment, and for computing technical statistics.
+
+
+# Communication
+
+The communication system is the means by which the information needed to carry out all other train control functions is transmitted and exchanged. This information may take any of several forms-voice, visual, auditory, and digital or analog electrical signals.
+
+
+Unlike other train control functions, which involve information processing and decision-making, communication is largely a facilitative process—serving to convey information without producing any unique functional outcomes of and by itself. For this reason, the categorization given below indicates not functions as such but major classes of information that must flow throughout the system in order for other train control functions to take place:
+
+- **Train protection**: Information necessary to locate individual trains, assure their safe separation, prevent overspeed, and control movement at route interlockings.^16^
+- **Command and status**: Information on the operational state of the system, command signals to control train and switch movement, and feedback to determine the response of system elements to command inputs.^16^
+- **Emergency**: Information on the nature and location of emergency events and summons for help to elements within the transit system or to outside agencies (e.g., fire, police, medical, and rescue).
+- **Passenger service**: Information relating to train service and system operation for assisting passengers using transit facilities.
+- **Maintenance**: Information needed to plan or conduct preventive and corrective maintenance.
+- **Business operations**: Operational information used to maintain a record of (and to plan for) workforce allocation, vehicle utilization, procurement of supplies and equipment, operating expenses, and system patronage.
+
+^15^ Some transit engineers limit the definition of communication to verbal or visual communication (radio, telephone, TV, etc.). Machine-to-machine communications, since they tend to be specialized, are considered part of the function which they serve. This view seems restrictive and makes an artificial distinction between information exchange by human operators and other forms. The definition here is generic, embracing all types of information flow, no matter the means.
+
+^16^ Typically, this part of the communication system is separate from the network used for other information types and is seen as an integral part of the train protection system.
+
+### AUTOMATION
+
+At one time or another, all of the train control functions listed above have been performed by human operators, and many still are, even in the most technologically advanced transit systems. Theoretically, any of these functions could also be performed by automatic devices, and more and more have, in fact, been assigned to machines over the years, Before examining the technology by which train control automation has been achieved, it is first necessary to consider what is meant by automation and to clarify the terminology used in this report.
+
+_Figure 2_ is a generalized diagram of the process by which any train control function is accomplished. It involves receiving information about some operational state of the system and some desired state. This information must then be interpreted— for example, by comparing the two states and deriving a quantitative expression of the difference, Next, an appropriate control response to null the difference must be selected, and some specific command message to the controlled element must be formulated and transmitted. A final, and all-important, step is monitoring the results of the control action to ascertain that the desired system state or condition has been achieved. This last step, called feedback, provides an input signal to start the process all over again, thereby creating a loop that permits the control process to be continuous and adaptive.l7
+
+If all of the steps in the general sequence shown in _Figure 2_ are performed by a human operator, the process is called manual, even though manual action in the strict sense may not be involved. Thus, manual denotes a process that may include visual, auditory, and other forms of sensory perception as well as purely cognitive activities such as interpretation, weighing alternatives, and decisionmaking. The command output might be accomplished by some manual activity such as pressing a button or moving a control lever, or it might take the form of a voice command or simply a nod of the head. The essential feature of a manual process, as the term is used here, is that all the basic control steps to accomplish a function are human activities. the general sequence shown in _Figure 2_ are performed by a human operator, the process is called manual, even though manual action in the strict sense may not be involved. Thus, manual denotes a process that may include visual, auditory, and other forms of sensory perception as well as purely cognitive activities such as interpretation, weighing alternatives, and decision-making. The command output might be accomplished by some manual activity such as pressing a button or moving a control lever, or it might take the form of a voice command or simply a nod of the head. The essential feature of a manual process, as the term is used here, is that all the basic control steps to accomplish a function are human activities.
+
+It is also possible for all of the steps in the control loop to be accomplished by some mechanical or electrical device. If so, the process is called automated. The device need not necessarily be complicated, nor is a computer required in order for the apparatus to process information and make a “decision.” A simple junction box with a two-state logic circuit (ON or OFF) would satisfy the definition of an automated control device, provided no human actions were required to receive and interpret input signals, select and order a response, and monitor the result.
+
+Between the extremes of purely manual control and fully automatic control, there are numerous combinations of mixed man-machine control loops. These are called semi-automated or partially automated— the terms are used synonymously to denote a process (or a system) in which there are both manual and automatic elements. Thus, automation is not to be taken in an absolute, all-or-nothing sense. The machine can be introduced by degrees into a system to perform specific functions or parts of functions. When comparing parts of a train control system or when comparing one system with another, it is therefore possible to speak of automation in comparative terms and to say that one is more or less automated than another, depending on how many specific functions are performed by machines.
+
+For brevity, acronyms are used to describe certain areas where automation is applied in train control. ATC (automatic train control) refers generally to the use of machines to accomplish train control functions. It does not necessarily suggest a completely automated system. It can be applied to a system where certain functions or groups of functions are performed automatically while others are performed manually. ATP (automatic train protection), ATO (automatic train operation), and ATS (automatic train supervision) are used to designate major groups of functions that may be automated. For example, if a system is said to have ATP, it means that train protection is accomplished (either completely or mostly) by automatic devices without direct human involvement. If a system is described as having ATC consisting of ATP and some ATS, this indicates that train protection is assured by automatic devices and that train supervision is a mixture of manual and automatic elements. By implication, train operation in such a system would be manual.
+
+While automation involves the substitution of machine for human control, this does not mean that the human operator is removed from the system altogether. An automated system is not always an unmanned system, even though all functions are routinely performed by machines. For instance, train protection and train operation may be completely automatic in a given transit system, but there could still be an operator or attendant on board the train to oversee equipment operation and, most importantly, to intervene in the event of failure or malfunction. This emergency and backup role is, in fact, a major type of human involvement in even the most automated train control systems. In all rail rapid transit train control systems now in ...operation or under development, automation is utilized only for normal modes of operation, with manual backup as the alternative for unusual conditions, breakdowns, and emergencies.
+
+In passing, it should also be noted that automation is not synonymous with remote control, even though the two may at times go hand in hand. In train supervision, for example, many functions are accomplished manually by controllers who are physically far removed from the train and wayside. In central control facilities, the operators may never actually see the vehicles or track and yet perform all or most of the functions necessary to set up routes, dispatch trains, and monitor traffic. Conversely, automated functions are often performed locally, i.e., by devices on board the train or at a station or switch. In general, the location of the controlling element in relation to the controlled element is independent of how the functions are accomplished. However, it is also true that automation does facilitate the process of remote control, and systems with a high level of ATC tend also to employ more centralized forms of train control, especially for supervisory functions.
+
+### AUTOMATIC TRAIN CONTROL TECHNOLOGY
+
+The automatic equipment that accomplishes train control functions is often of complex design, but the basic technology is quite simple. The purpose of this section is to provide an acquaintance with the fundamental elements of an ATC system—track circuits, signaling apparatus, train operating devices, interlocking controls, and supervisory equipment. The details of this technology and the design features of ATC equipment now in use in rail rapid transit systems are omitted here but are provided in appendices B and C.
+
+#### Track Circuits
+
+For safety and efficient operation of a transit system, it is imperative to know the locations of trains at all times. The sensing device providing this information is the track circuit, which was invented over 100 years ago and has remained essentially unchanged in principle even though extensively refined and modified in its engineering details.
+
+The track circuit is an electrical circuit consisting of a power source, the running rails, and a signal receiver (relay). The track is divided into electrically isolated segments (called blocks) by insulated joints placed at intervals in the running rails. This forms a circuit with a power source connected to the rails at one end of the block and a relay at the other. The relay, in turn, forms part of a second electrical circuit which has its own independent power supply (commonly a battery) and includes a signaling device such as wayside colored lights.
+
+When no train occupies the block, the relay is energized by the track circuit battery, causing the relay to “pick up.” However, when a train enters the block, the wheels and axles conduct electricity between the running rails, short-circuiting the track circuit and reducing the current to the relay. The relay acts as a switch in the secondary signal circuit, creating one electrical path when it picks up and another when it drops. Thus, the basic principle of the track circuit is the shunting phenomenon produced by the train wheels passing along the electrically energized running rails.
+
+The track circuit is designed according to the fail-safe principle. A clear (unoccupied block) indication can only be given if the track circuit is in proper working order. Any malfunctions, such as broken rails or a failure of the power source, would produce an occupied signal, ensuring safety.
+
+#### Wayside Signals
+
+One of the earliest and still widely used signal devices for controlling train movement is the automatic wayside block signal. It consists of a color-light signal, similar to city traffic signals, located beside the track at the entrance to each block. This signal is controlled by the track circuit relay. The signal displays red, yellow, or green lights (aspects) to indicate track circuit occupancy ahead.
+
+To allow trains to operate efficiently, wayside signals give the operator advanced indication of speed and stopping commands. For instance, a three-block, three-aspect wayside signal system would convey three different movement commands—green (proceed), yellow (proceed prepared to stop at the next signal), and red (stop). If Train A is stopped in Block 4 and Train B is approaching from behind, Train B will receive signals to notify it of the position of Train A and when it should prepare to stop or proceed.
+
+The wayside signaling system is designed to be fail-safe. It uses multiple lamps for each signal aspect and sometimes redundant power sources. If all else fails, standard operating rules dictate that a dark (unlighted) signal is to be observed by the train operator as a stop command, ensuring the safety of the system.
+
+
+
+
+
+
+
