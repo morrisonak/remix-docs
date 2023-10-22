@@ -1,13 +1,14 @@
 ---
 meta:
-  title: Getting started
+  title: Introduction to Automatic Train Control
   description: Isn't this awesome?
-date: '2023-10-02T00:00:00'
-updated: '2023-10-02T00:00:00'
+date: "2023-10-02T00:00:00"
+updated: "2023-10-02T00:00:00"
 excerpt: Hello
 headers:
   Cache-Control: no-cache
 ---
+
 # Train Control
 
 Train control is the process by which the movement of rail rapid transit vehicles is regulated for the purposes of safety and efficiency. The process is carried out by a combination of elements - some men, some machines - located on the train, along the track, in stations, and at remote central facilities. These elements interact to form a command and control system with four major functions:
@@ -35,8 +36,7 @@ Train protection is a family of functions whose purpose is to assure the safety 
 
 ### Train Operation
 
-Train operation consists of those functions necessary to move the train and to stop it at stations.  You're right, my previous Markdown formatting of the text content was incomplete. Here is the content formatted with Markdown headings and code block:
-
+Train operation consists of those functions necessary to move the train and to stop it at stations. You're right, my previous Markdown formatting of the text content was incomplete. Here is the content formatted with Markdown headings and code block:
 
 # Train Protection
 
@@ -50,7 +50,7 @@ Lateral train separation depends directly on speed control. With multiple tracks
 
 Activating the brakes to bring the train to a stop before a certain point is reached.
 
-## Train Separation Protection 
+## Train Separation Protection
 
 Speed supervision assists in keeping proper spacing between trains and in preventing collisions.
 
@@ -68,11 +68,11 @@ Train operation involves regulation of train movement to pick up and discharge p
 
 # Train Supervision
 
-Train supervision involves monitoring the movement of individual trains in relation to schedule and route assignments and overseeing the general disposition of vehicles and flow of traffic for the system as a whole. 
+Train supervision involves monitoring the movement of individual trains in relation to schedule and route assignments and overseeing the general disposition of vehicles and flow of traffic for the system as a whole.
 
-The train supervision system may thus be thought of as making strategic decisions which the train operation system carries out tactically. 
+The train supervision system may thus be thought of as making strategic decisions which the train operation system carries out tactically.
 
-In addition, train supervision includes certain information processing and recording activities not directly concerned with train safety and movement but necessary to the general scheme of operations. 
+In addition, train supervision includes certain information processing and recording activities not directly concerned with train safety and movement but necessary to the general scheme of operations.
 
 Train supervision functions are:
 
@@ -90,11 +90,9 @@ Train supervision functions are:
 
 - Recordkeeping —maintaining operational logs and records for business and payroll purposes, for scheduling maintenance, for ordering supplies and equipment, and for computing technical statistics.
 
-
 # Communication
 
 The communication system is the means by which the information needed to carry out all other train control functions is transmitted and exchanged. This information may take any of several forms-voice, visual, auditory, and digital or analog electrical signals.
-
 
 Unlike other train control functions, which involve information processing and decision-making, communication is largely a facilitative process—serving to convey information without producing any unique functional outcomes of and by itself. For this reason, the categorization given below indicates not functions as such but major classes of information that must flow throughout the system in order for other train control functions to take place:
 
@@ -149,9 +147,455 @@ To allow trains to operate efficiently, wayside signals give the operator advanc
 
 The wayside signaling system is designed to be fail-safe. It uses multiple lamps for each signal aspect and sometimes redundant power sources. If all else fails, standard operating rules dictate that a dark (unlighted) signal is to be observed by the train operator as a stop command, ensuring the safety of the system.
 
+### Trip Stops
 
+In the wayside signal system described above,
+safe train movement depends solely on the compliance
+of the operator with signal indications. To
+guard against error, inattention, or incapacitation of
+the train operator, wayside signals can be supplemented
+with an automatic stop-enforcing mechanism,
+called a trip stop.
+The trip stop is a device located beside the track
+at each wayside signal. The type commonly used in
+the United States consists of a mechanical arm that
+is raised or lowered in response to the track occupancy
+detected by the track circuit. When the arm is
+in the raised position, it engages a triggering device
+on the train and actuates (trips) the emergency
+brake.20 A train entering a block in violation of the
+wayside signal indication would thus be brought to
+a complete stop before colliding with the train in
+the next block regardless of what action the train
+operator took, or
+In addition to
+sions, trip stops
+failed to take.
+protecting against rear-end collican
+also be used in conjunction
+with the track circuits and other signal appliances to
+provide automatic protection against overspeed. For
+this application, a timing device is added to the circuit
+controlling the trip stop. When a train enters a
+block, the trip stop at the entrance to the next block
+is in the raised position but will be lowered after a
+time interval corresponding to the minimum time
+(the maximum speed) permitted for a train to traverse
+the block. This arrangement is commonly
+used on curves, downgrades, and other such sections
+of track where excessive speed could cause a
+derailment. A variation of this scheme is commonly
+used at stations to allow a following train to close in
+on a leading train, provided the follower moves at
+appropriately diminishing speed as it approaches its
+leader.
+Like track circuits and signals, the trip stop is
+designed to operate in a fail-safe manner. The trip is
+raised to the stopping position by gravity or a heavy
+spring and lowered by a pneumatic or electric
+mechanism. Thus, failure of the trip stop actuating
+mechanism or its source of energy will result in the
+trip stop being raised to the stop position.
 
+### Cab Signals
 
+Automatic block signal systems with wayside
+signals and trip stops, while offering effective train
+protection, have certain operational disadvantages.
+Sometimes the signals are obscured by fog, rain, or
+snow. In such cases, operating rules require that the
+operator consider the signal as displaying its most
+restrictive aspect and operate the train accordingly.
+If the signal is actually displaying a more permissive
+indication, time is lost unnecessarily. A second
+disadvantage is that wayside signals convey
+commands only at the entrance to a block. The train
+operator must reduce speed to the maximum permitted
+by the signal and maintain that speed until
+reaching the next signal. If conditions change immediately
+after the train enters the block and it
+becomes safe to proceed at a greater speed, the train
+operator has no way of knowing this since the signal
+is behind him. Again, time is lost. With wayside
+block signals there is also the possibility that the
+operator will fail to observe the signal correctly,
+read the wrong signal in multiple-track territory, or
+forget the indication of the last signal passed. If
+there are trip stops, these kinds of human failure do
+not result in an unsafe condition, but the efficiency
+of train operation can be adversely affected.
+One way to overcome these disadvantages is to
+provide signal displays within the cab of the train,
+This is called cab signaling, A display unit, mounted
+in the cab within the train operator’s forward field
+of view, shows indicator lights similar to those of
+wayside signals, e.g., red, yellow, and green aspects.
+Cab signals can thus convey the same movement
+commands as wayside signals, but they do so continuously
+in response to the instantaneous condition
+of the track ahead. They can also convey precise
+speed commands instead of just stop-and-go information,
+thus providing more flexible operation
+and paving the way to ATO. The cab signal unit has
+an audible warning that sounds whenever the signal
+aspect becomes more restrictive and continues
+to sound until the operator silences it by an
+acknowledging device. Figure 5 is an illustration of
+a typical cab signal.
+Transferring the display of information from the
+wayside to the cab involves an alternate type of
+track circuit technology. To operate cab signals, the
+current passing through the track circuit (usually
+a.c. is not steady, as for conventional wayside signals,
+but is pulsed (turned on and off) at several
+different repetition rates in response to track occupancy.
+Each pulse rate is a code to indicate allowable
+train speed. This pulsed d.c. energy is passed
+through the rails, picked up inductively by a
+receiver (antenna) on the train, and decoded to
+retrieve speed command information, This information
+is used to actuate the appropriate cab signal
+display. Because the train is continuously receiving
+pulses of energy, a change in the pulse rate of the
+coded track circuits indicating a change of conditions
+ahead of the train is instantaneously received
+by carborne equipment and displayed by cab signals
+regardless of where the train happens to be within a
+block.
 
+Figure 6 illustrates how cab signals control a
+train in a three-block, three-aspect signaling
+system. In this example, the code rates transmitted
+through the rails (expressed as pulses per minute)
+correspond to the following signal aspects:
+180 Green (Proceed)
+75 Yellow (Proceed at medium speed
+prepared to stop)
+O Red (stop)
 
+The situation depicted here is the same as in the illustration
+of wayside signals (figure 4). Train B is
+approaching Train A, which is completely stopped,
+Note that the moment Train A starts to move and
+clears the block, Train B receives a green signal immediately—
+not at the entrance to the next block, as
+it would with wayside signals. Note also that a O
+code appears in the part of the block immediately
+behind Train B as it moves along the track closer to Train A before being required to stop.
 
+### Speed Control
+
+With the addition of speed sensing and brake
+control mechanisms, cab signals can also be used to
+provide automatic overspeed protection. Figure 7 is
+a schematic diagram of such a system. It is the same
+as the schematic shown in figure 5, except for the
+addition of speed and code rate comparison equipment
+and the direct connections to the propulsion
+and braking systems.
+This arrangement allows the train operator to
+control speed so long as it does not exceed the commanded
+speed shown on the cab signal unit. If the
+commanded speed is exceeded or if the block speed
+changes to a lower value because of another train
+ahead, the operator receives an audible warning.
+The operator has a fixed time (typically 2 to 3 seconds)
+to initiate the required braking manually. If
+this is done, the brakes can be released when the
+commanded lower speed is reached. If not, the
+brakes are applied automatically and irrevocably by
+the ATC system, and the train is brought to a full
+stop before the operator can resume control. This is
+analogous to the overspeed control provided by
+wayside signals with trip stops, except that braking
+can be initiated anywhere within a block not just at
+the entrance. Another difference is that trip stops
+act to stop the train after an overspeed condition has
+occurred over a measured course, usually several
+hundred feet in length. Cab signals do the same, but
+instantaneously, thus eliminating the delay inherent
+in the preliminary measured course and permit
+trains to follow one another more closely for a given block 
+length.
+
+### Automatic Train Operation
+
+Basically cab signaling provides carborne
+automatic train protection in the form of collision
+prevention. With the addition of on-board equipmerit
+for sensing and comparing command (allowable)
+and actual speed, cab signaling makes it possible
+to expand the train protection function to permit
+speed regulation. This, in turn, forms the basis for
+extending automation into the area of train operation.
+
+Several forms of automatic train operation
+(ATO) are possible, but all have two basic
+features-automatic speed regulation and station
+stopping.
+
+Automatic speed regulation (ASR), as the name
+implies, is basically a comparator circuit for matching
+actual speed to command speed. Speed comands
+received from coded track circuits are picked up by
+a carborne receiver, decoded, and compared to actual
+train speed sensed by a tachometer in the drive
+mechanism. Up to this point, an automatic speed
+regulation system is like cab signaling. The
+difference arises in how this comparison is used.
+With cab signals, the comparison is used to actuate
+a penalty brake application to stop the train when
+actual speed exceeds command speed. With ASR,
+the comparison is used to control the motors and
+brakes in an effort to minimize the difference between
+actual and command speed. An advisory display
+of speed commands and train speed may be
+provided for the operator. In effect, ASR removes
+the human operator from the control loop for running
+the train and provides for an essentially instantaneous
+and invariant response by propulsion and
+braking systems, without the delay of human reaction
+time and without the variability and possibility
+for misinterpretation inherent in manual train
+operation.
+
+The other basic element of ATO is station stopping,
+which involves bringing the train to stop
+automatically at a predetermined location in each
+station. This is accomplished by special wayside
+control units working in cooperation with position
+receivers, logic circuits, and automatic speed
+regulation equipment on the train. One method
+uses wayside “triggers” spaced some distance from
+the station as reference points for programed stopping.
+The first trigger, farthest from the station.
+transmits a command signal that
+board the train, a velocity-distance
+generates, on
+profile which
+the train is to follow to a stop. Additional triggers,
+nearer the station platform, correct the generated
+velocity-distance profile for the effects of wheel
+slip and slide. The ASR system monitors the
+velocity-distance profile and controls the braking
+effort to bring the train to a stop at a predetermined
+point. Another method of programed stopping
+makes use of long wayside antenna to provide a
+series of position signals to a carborne control
+system as the train passes along its length. The carborne
+control system determines train position and
+combines this with speed and deceleration information
+(sensed on board the train), to produce an appropriate
+propulsion or braking command for the
+traction control system.
+
+To this basic ATO system, other automated
+features may be added. Doors can be opened
+automatically after the train is brought to a stop in a
+station, This requires a circuit to actuate door opening
+mechanisms and appropriate safety interlocks to
+assure that the train is in fact stopped and at a station.
+Door closure may also be automated by adding
+a timing circuit to measure how long the doors have
+been open and to initiate a door closure signal
+automatically after a predetermined dwell time has
+elapsed. Train departure can also be initiated
+automatically by introducing another control circuit
+to apply propulsion power after receipt of a signal
+confirming that doors are closed and locked.
+
+For each of these levels of ATO, the train operator
+may be provided with an advisory display to
+show what commands are being received and what
+response is being made by automatic mechanisms.
+The operator may also be provided with manual
+override controls to inhibit automatic functions or
+to vary automatic system operation. For example,
+the operator may intervene manually to adjust the
+stopping point, to prevent some or all doors from
+opening, to vary station dwell time, or to initiate or
+prevent departure. Figure 8 shows a functional
+diagram of a typical ATO system and a picture of
+the train operator’s console.
+
+### interlocking
+
+An interlocking is an arrangement of signals and
+signal appliances so interconnected that functions
+must succeed each other in a predetermined sequence,
+thus permitting safe train movements along
+a selected route without collision or derailment. An
+interlocking thus consists of more than just
+switches to allow trains to move along crossing,
+merging or branching routes; it is also made up of
+signals and control devices that automatically prevent
+conflicting or improper movements. Interlocking
+may be manually controlled or equipped with
+automatic devices that sort trains through branches
+and junctions according to desired destinations.
+
+Several forms of automatic interlocking are in
+use. One of the oldest and simplest is an arrangement
+of hand-operated switches, each of which
+controls an individual signal or track turnout. The
+switches are mechanically or electrically interconnected
+such that once a particular route is selected,
+the switch points locked in place, and the signals
+cleared, no other route for a potentially conflicting
+move can be established until the train bound for
+the cleared route has safely passed, This arrangement
+represents a semiautomated form of movement
+control, Manual operation is required to select
+a route and move the control levers, but all else
+follows automatically, including inhibition of
+further switch movement until the train has traversed
+the limits of the interlocking.
+
+A more advanced, but still not completely automated,
+type of interlocking is a system that permits
+a towerman or central supervisor to select the
+entrance and exit points for a train to pass through
+an interlocking, with the switches and signals for
+t h e a p p r o p r i a t e r o u t e t h e n b e i n g s e t u p
+automatically by an arrangement of electrical
+relays, Figure 10 shows such a control panel for a
+system called entrance-exit route interlocking, The
+tower operator moves the control knobs to designate
+a desired route. Internal logic circuits
+automatically select the best available nonconflicting
+route, aline and lock switches, and activate the
+appropriate wayside signals to allowing train movement
+while holding other signals at stop to prevent
+conflicting moves. This level of automation may be
+characterized as automatic execution in response to
+manual inputs.
+
+Fully automatic interlocking are also in use. In
+addition to track circuits, switch operation, and signal
+control elements, the automatic interlocking
+must have some device for identifying a specific
+train in order to create the necessary input to the
+logic circuits.22 One method to identify trains is by
+means of wayside optical device that scans a panel
+on the lead car which gives destination, route, and
+other needed information. Another method makes
+use of a carborne transponder that is interrogated by
+a wayside device. With either technique, however,
+train identity becomes the substitute for manual inputs
+that allows trains to be sent along predetermined
+routes without human involvement.
+
+### Train Supervision Equipment
+
+Train supervision embraces a wide variety of
+functions. The special-purpose equipment that has
+been developed to perform these functions is
+equally varied. In a general survey of train control
+technology it is not possible to describe all types of
+automatic and semiautomatic devices that are in
+use. The following, therefore, is a brief catalog of
+some of the more important systems.
+
+Train dispatching is concerned with the timing of
+train departures from terminals in accordance with
+the schedule of operations. In conventional transit
+systems this function is accomplished by
+preprogrammed dispatching machines that
+automatically ring a bell or flash a light as a signal
+to the train operator that it is time to leave a terminal
+or intermediate waypoint. In some systems,
+the dispatch function may be assigned to a central
+train control computer that transmits electric starting
+signals to the train in accordance with a master
+schedule stored in the computer memory.
+
+Route assignment and control is a train supervisory
+function that is allied to the train protection
+function of route interlocking. Route control is a
+strategic function, consisting of selecting routes for
+trains and transmitting the orders to wayside points,
+where the orders are implemented tactically by interlocking
+equipment. In conventional transit
+systems, route assignment and control is performed
+locally, either manually or automatically, With
+remotely controlled route interlocking, however, it
+becomes operationally practical to place the
+strategic and tactical management of routing in a
+computer. The programing to accomplish this is
+relatively simple and straightforward, and a computer
+is ideally suited to handle what is an essentially
+repetitious task with a limited number of
+alternative courses of action. The safety aspects of
+route interlocking are assured not by central computer
+control, but locally by conventional interlocking
+equipment at the wayside.
+
+Performance monitoring involves comparing the
+overall movement of traffic with the schedule and
+taking action to smooth out irregularities of traffic
+flow. In most transit systems this function is carried
+out by central control personnel aided by automatic
+display devices. One such device is a pen recorder
+that marks a moving paper graph to record the
+passage of trains past check points, Each spike on
+the graph indicates the presence of a train, as
+detected by the track circuits, at some time and
+place along the route. A train supervisor, by checking
+this graph against the schedule, can monitor the
+progress of all trains operating on line and detect
+delays or queuing up of trains.
+
+Another form of performance monitoring aid is
+the model board (figure 11), which is a schematic
+representation of the track plan of the transit
+system with indicator lights to denote track circuit
+occupancy and, hence, the position of each train on
+the line, This is the functional equivalent of the
+pengraph recorder, but in a more pictorial form of
+display. Another type of model board used in newer
+transit systems has, in addition to the master track
+plan, small cathode ray tube displays that permit individual
+supervisors to obtain more detailed or expanded
+views of selected track sections or to call up
+special-purpose presentations of data.
+
+Pengraphs, model boards, and the like are not
+fully automatic supervisory devices. The human
+operator is still needed to interpret the display and
+to formulate orders to individual trains. In the most
+advanced systems routine performance monitoring
+is assigned to computers, which keep a continuous
+watch on traffic movement and automatically
+calculate and transmit performance commands to
+trains. Man, in this circumstance, acts in a completely
+different supervisory capacity. He does not
+monitor and regulate traffic. Instead, he supervises
+machines which, in turn, monitor and regulate
+traffic.
+
+There are two general types of action that can be
+taken to smooth out irregularities in traffic flow.
+Both are accomplished in response to commands
+from central control. One is to hold a train in a station
+for a time longer or shorter than the scheduled
+dwell time or, in extreme cases, to direct a train to
+bypass a station in order to close up a gap. The other
+method is to alter the speed of the train between
+stations. This latter method is called performance
+level modification and takes the form of a proportional
+reduction of train speed below the speed normally
+allowed in each block. In systems supervised
+by a central computer and with automatic train
+operation, performance level modification is accomplished
+without human intervention. The required
+reduction is calculated by the central computer
+and automatically transmitted to stations or
+other critical locations, where the signals are picked
+up by carborne ATO equipment that modifies the
+response to the normal speed commands transmitted
+by the coded track circuits. These systems may
+also include provisions for manual inputs and displays
+at central control or on the train, but the normal
+mode of operation is automatic.
+
+### A WALK THROUGH A TRANSIT SYSTEM

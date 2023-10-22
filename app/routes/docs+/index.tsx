@@ -16,8 +16,8 @@ export const meta: V2_MetaFunction = ({ data, matches }) => {
 
 	return [
 		getSeo({
-			title: 'Docs',
-			description: 'Docs',
+			title: 'Automatic Train Control',
+			description: 'ATC Docs',
 			url: `${parentData[0].requestInfo.url}`,
 		}),  
 	]
